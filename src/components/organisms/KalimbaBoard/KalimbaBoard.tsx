@@ -6,8 +6,8 @@ import { useAudioPlayer } from 'expo-audio';
 import {
   Snote1, Snote2, Snote3, Snote4, Snote5,
   Snote6, Snote7, Snote8, Snote9,
-} from '../../../assets';
-import StickButton from '../../atoms/StickButton';
+} from '@/assets';
+import StickButton from '@/components/atoms/StickButton';
 
 const notes = [
   { note: '1', file: Snote1 },
