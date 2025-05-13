@@ -1,12 +1,13 @@
 // components/organisms/KalimbaBoard.tsx
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import StickButton from '../atoms/StickButton';
+import { View } from 'react-native';
+import { styles } from './KalimbaBoard.styles';
+import StickButton from '../../atoms/StickButton/StickButton';
 import { useAudioPlayer } from 'expo-audio';
 import {
   Snote1, Snote2, Snote3, Snote4, Snote5,
   Snote6, Snote7, Snote8, Snote9,
-} from '../../assets';
+} from '../../../assets';
 
 const notes = [
   { note: '1', file: Snote1 },
@@ -43,10 +44,4 @@ export default function KalimbaBoard() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
