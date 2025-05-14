@@ -6,13 +6,13 @@ import { usePlayNote } from '@/hooks/usePlayNote';
 import NoteButton from '@/components/molecules/NoteButton';
 
 export default function KalimbaBoard() {
-const playSound = usePlayNote();
+    const playSound = usePlayNote();
 
-return (
-<View style={styles.container}>
-{notes.map((item, index) => (
-<NoteButton key={index} note={item.note} onPress={() => playSound(item.file)} />
-))}
-</View>
-);
+    return (
+        <View style={styles.container}>
+            {notes.map((item, index) => (
+                <NoteButton key={index} note={item.note} onPress={() => playSound(item.file)} />
+            ))}
+        </View>
+    );
 }
